@@ -1,12 +1,11 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const express = require('express');
+import express, {} from "express";
+import cors from "cors";
 const app = express();
-const port = 3000;
+import dotenv from 'dotenv';
+app.use(cors());
+dotenv.config();
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`);
-});
+export default app;
 //# sourceMappingURL=index.js.map
