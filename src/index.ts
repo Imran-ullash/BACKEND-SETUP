@@ -1,7 +1,8 @@
 import express, { type Application, type Request, type Response } from "express";
 import cors from "cors"
-const app:Application = express()
+import { config } from "dotenv"
 import dotenv from 'dotenv'
+const app:Application = express()
 
 
 app.use(cors())
